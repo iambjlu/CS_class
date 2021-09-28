@@ -3,4 +3,5 @@
 語言：C#
 <br><br>
 <h2>主題</h2>
-* <a href="https://github.com/iambjlu/ConsoleApp/tree/drink"> 飲料點餐系統 </a>
+<pre>請從以下連結前往主題</pre>
+<a href="https://github.com/iambjlu/ConsoleApp/tree/drink"> 飲料點餐系統 </a>
