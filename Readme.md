@@ -3,9 +3,9 @@
 <br><br>
 <h2>主題</h2>
 <pre>請從以下連結前往主題</pre>
-<a href="https://github.com/iambjlu/CS_Class/drink"> 飲料點餐系統 (WPF App) </a><br>
-<a href="https://github.com/iambjlu/CS_Class/drink_UWP"> 飲料點餐系統 (自行移植至UWP App) </a><br>
-<a href="https://github.com/iambjlu/CS_Class/Wpf_File"> 飲料檔案讀取系統 </a><br>
+<a href="https://github.com/iambjlu/CS_Class/tree/master/drink"> 飲料點餐系統 (WPF App) </a><br>
+<a href="https://github.com/iambjlu/CS_Class/tree/master/drink_UWP"> 飲料點餐系統 (自行移植至UWP App) </a><br>
+<a href="https://github.com/iambjlu/CS_Class/tree/master/Wpf_File"> 飲料檔案讀取系統 </a><br>
 <br><br>
 <h2>Visual Studio VCS 使用方式筆記</h2>
 使用版本：Visual Studio 2019 Professional<br><br>
