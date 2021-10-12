@@ -1,0 +1,27 @@
+﻿<Page
+    x:Class="App1.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    >
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="67*"/>
+            <ColumnDefinition Width="683*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel x:Name="drink_menu" Margin="10,274,794,161" Grid.Column="1"/>
+        <Button x:Name="Button1" Content="確定訂購" Margin="404,159,0,0" VerticalAlignment="Top" Width="376" Height="83" Click="Button1_Click" Grid.Column="1"/>
+        <TextBlock x:Name="TextBlock1" HorizontalAlignment="Left" Margin="404,274,0,0" TextWrapping="Wrap" Text="點餐的內容放在這裡" VerticalAlignment="Top" Height="233" Width="378" Grid.Column="1"/>
+        <StackPanel Margin="0,135,794,0" Height="134" VerticalAlignment="Top" HorizontalAlignment="Right" Width="371" Grid.Column="1">
+            <RadioButton x:Name="rb1" Content="內用" Checked="RadioButton_Checked" Height="32" Width="161"/>
+            <RadioButton x:Name="rb2" Content="外帶" Checked="RadioButton_Checked" Height="32" Width="161" IsChecked="True"/>
+        </StackPanel>
+
+    </Grid>
+</Page>
