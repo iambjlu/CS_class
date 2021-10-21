@@ -7,7 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBlock x:Name="TextBlock1" HorizontalAlignment="Left" Margin="171,0,0,0" Text="文字方塊" TextWrapping="Wrap" VerticalAlignment="Center" Height="231" Width="395"/>
+        <Grid>
+            <TextBlock x:Name="TextBlock1" HorizontalAlignment="Left" Margin="81,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="318" Width="217" Background="#FFD4C2AF" Foreground="#FF81363A"/>
+            <Button x:Name="SaveButton" Content="儲存檔案" HorizontalAlignment="Left" Margin="420,45,0,0" VerticalAlignment="Top" Width="249" Height="87" Background="#FFD4C2AF" FontSize="16" Click="SaveButton_Click" Foreground="#FF81363A" BorderBrush="#FF81363A"/>
 
+        </Grid>
     </Grid>
 </Window>
