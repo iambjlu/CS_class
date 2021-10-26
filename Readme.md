@@ -6,6 +6,7 @@
 <a href="https://github.com/iambjlu/CS_Class/tree/master/drink"> 飲料點餐系統 (WPF App) </a><br>
 <a href="https://github.com/iambjlu/CS_Class/tree/master/drink_UWP"> 飲料點餐系統 (自行移植至UWP App) </a><br>
 <a href="https://github.com/iambjlu/CS_Class/tree/master/Wpf_File"> 飲料檔案讀取系統 </a><br>
+<a href="https://github.com/iambjlu/CS_Class/tree/master/Wpf_Paint"> 小畫家(客製版) </a><br>
 <br><br>
 <h2>作業範本</h2>
 <a href="https://github.com/iambjlu/CS_class/raw/master/Readme_src/1101020.docx" target="_blank" download>作業範本點此下載</a><br>
