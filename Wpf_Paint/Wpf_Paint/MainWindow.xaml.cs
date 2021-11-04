@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Windows;
 using System.Windows.Controls;
@@ -211,7 +211,8 @@ namespace Wpf_Paint
         {
             System.Environment.Exit(881);
         }
-
+        //-----客製功能表結束-----
+        
         private void menuSlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
 
@@ -222,7 +223,7 @@ namespace Wpf_Paint
 
         }
 
-        //-----客製功能表結束-----
+        
 
 
         private void SaveCanvas_Click(object sender, RoutedEventArgs e)
