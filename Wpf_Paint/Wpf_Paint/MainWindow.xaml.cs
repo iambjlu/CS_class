@@ -1,4 +1,4 @@
-﻿using System.Windows;
+using System.Windows;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Shapes;
@@ -279,7 +279,10 @@ namespace Wpf_Paint
             }
         }
 
-        private void SaveCanvas_Click(object sender, RoutedEventArgs e)//存檔畫布為png、jpg檔
+        //-----客製功能表結束-----
+
+
+        private void SaveCanvas_Click(object sender, RoutedEventArgs e)
         {
             int w = Convert.ToInt32(myCanvas.RenderSize.Width);
             int h = Convert.ToInt32(myCanvas.RenderSize.Height);
