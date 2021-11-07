@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Wpf_Paint"
+    "\\Wpf_Paint",
+    "\\Wpf_Paint\\Wpf_Paint"
   ],
-  "SelectedNode": "\\Wpf_Paint",
+  "SelectedNode": "\\Wpf_Paint\\Wpf_Paint\\MainWindow.xaml.cs",
   "PreviewInSolutionExplorer": false
 }

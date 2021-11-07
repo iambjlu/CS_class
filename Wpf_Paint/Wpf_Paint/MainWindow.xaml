@@ -13,67 +13,89 @@
                 <MenuItem Header="結束小畫家              ⌥ F4" FontWeight="Normal" FontFamily="Microsoft JhengHei" Click="bye"  Cursor="Pen"/>
             </MenuItem>
             <MenuItem Header="檔案"  Height="20">
-
                 <MenuItem Header="清除畫布" Click="ClearButton_Click"/>
                 <MenuItem Header="儲存畫布" Click="SaveCanvas_Click"/>
             </MenuItem>
             <MenuItem Header="色彩"  Height="20">
+                <MenuItem Header="畫布色彩" Click="CanvasColorButton_Click"/>
                 <MenuItem Header="筆刷色彩" Click="StrokeButton_Click"/>
                 <MenuItem Header="填滿色彩" Click="FillButton_Click"/>
                 <StackPanel Orientation="Horizontal">
-                    <Slider x:Name="menuSlider" Orientation="Horizontal" Value="4" TickPlacement="TopLeft" IsSnapToTickEnabled="True" Minimum="1" Maximum="20" Width="146" ValueChanged="menuSlider_ValueChanged"/>
-                    <Label Content="{Binding Value,ElementName=menuSlider}" Width="30"/>
+                    <Slider x:Name="menuSlider" Orientation="Horizontal" Value="4" TickPlacement="TopLeft" IsSnapToTickEnabled="True"
+                         Minimum="1" Maximum="20" Width="146" ValueChanged="menuSlider_ValueChanged"/>
+                    <Label  Content="{Binding Value, ElementName=menuSlider}" Width="30"/>
                 </StackPanel>
             </MenuItem>
             <MenuItem Header="檢視"  Height="20">
                 <CheckBox x:Name="menuCheckBox" IsChecked="True" Content="顯示工具列" Click="menuCheckBox_Checked" />
             </MenuItem>
             <MenuItem Header="工具"  Height="20">
-                <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="80" />
-                        <ColumnDefinition Width="80" />
-                    </Grid.ColumnDefinitions>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="40"/>
-                        <RowDefinition Height="40"/>
-                    </Grid.RowDefinitions>
-                    <RadioButton Grid.Row="0" Grid.Column="0" Content="線條" Height="40" Width="80" GroupName="ShapeGroup1" Click="ShapeButton_Click" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
-                    <RadioButton Grid.Row="0" Grid.Column="1" Content="圓形" Height="40" Width="80" GroupName="ShapeGroup1" Click="ShapeButton_Click" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
-                    <RadioButton Grid.Row="1" Grid.Column="0" Content="長方形" Height="40" Width="80" GroupName="ShapeGroup1" Click="ShapeButton_Click" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
-                    <RadioButton Grid.Row="1" Grid.Column="1" Content="橡皮擦" Height="40" Width="80" GroupName="ShapeGroup1" Click="ShapeButton_Click" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
-                </Grid>
+                <RadioButton x:Name="MenuLineButton" Content="Line" GroupName="ShapeGroup" Click="ShapeButton_Click"/>
+                <RadioButton x:Name="MenuRectangleButton" Content="Rectangle" GroupName="ShapeGroup" Click="ShapeButton_Click"/>
+                <RadioButton x:Name="MenuEllipseButton" Content="Ellipse" GroupName="ShapeGroup" Click="ShapeButton_Click"/>
+                <RadioButton x:Name="MenuPolygonButton" Content="Polygon" GroupName="ShapeGroup" Click="ShapeButton_Click"/>
+                <RadioButton x:Name="MenuFreeLineButton" Content="FreeLine" GroupName="ShapeGroup" Click="ShapeButton_Click"/>
+                <RadioButton x:Name="MenuEraseButton" Content="橡皮擦" GroupName="ShapeGroup" Click="EraseButton_Click"/>
             </MenuItem>
         </Menu>
-        <ToolBarTray Height="36" Background="#FFEEF5FD" ToolBar.OverflowMode="Never">
+        <ToolBarTray x:Name="myToolBarTray" Height="36" Background="#FFEEF5FD" ToolBar.OverflowMode="Never">
             <ToolBar HorizontalAlignment="Right" Background="#FFEEF5FD" Width="266" Height="41" VerticalAlignment="Center" ToolBar.OverflowMode="Never">
-                <Button x:Name="StrokeButton" Content="筆刷色彩" HorizontalAlignment="Right" VerticalAlignment="Top" Height="36" Width="64" Background="{x:Null}" BorderBrush="{x:Null}" ToolBar.OverflowMode="Never"/>
-                <Slider x:Name="StrokeThicknessSlider" HorizontalAlignment="Left" VerticalAlignment="Center" Width="97" Value="3" Height="18" Orientation="Horizontal" RenderTransformOrigin="0.5,0.5" ToolBar.OverflowMode="Never">
-                    <Slider.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform/>
-                            <SkewTransform/>
-                            <TranslateTransform/>
-                        </TransformGroup>
-                    </Slider.RenderTransform>
-                </Slider>
+                <Button x:Name="StrokeButton" Content="筆刷色彩" HorizontalAlignment="Right" VerticalAlignment="Stretch" Width="64" ToolBar.OverflowMode="Never" Click="StrokeButton_Click" Background="Red"/>
+                <Slider x:Name="StrokeThicknessSlider" HorizontalAlignment="Left" VerticalAlignment="Center" Width="97" Value="3" Height="18" Orientation="Horizontal" RenderTransformOrigin="0.5,0.5" ToolBar.OverflowMode="Never" IsSnapToTickEnabled="True" ValueChanged="StrokeThicknessSlider_ValueChanged"/>
                 <Label x:Name="StrokeThicknessLabel" Content="{Binding Value, ElementName=StrokeThicknessSlider}" HorizontalAlignment="Left" VerticalAlignment="Center" ToolBar.OverflowMode="Never" FontFamily="Microsoft Sans Serif" />
-                <Button x:Name="FillButton" Content="填滿色彩" Height="36" Width="64" Background="{x:Null}" BorderBrush="{x:Null}" ToolBar.OverflowMode="Never" Click="FillButton_Click"/>
+                <Button x:Name="FillButton" Content="填滿色彩" Height="36" Width="64" Background="Yellow" BorderBrush="{x:Null}" ToolBar.OverflowMode="Never" Click="FillButton_Click" />
             </ToolBar>
 
-            <ToolBar Background="#FFEEF5FD" HorizontalAlignment="Center" Width="280" Height="41" VerticalAlignment="Bottom" ToolBar.OverflowMode="Never">
-                <Button x:Name="LineButton" Content="線條" HorizontalAlignment="Right" VerticalAlignment="Top" Height="36" Width="64" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Microsoft Sans Serif" ToolBar.OverflowMode="Never" Click="ShapeButton_Click"/>
-                <Button x:Name="RectangleButton" Content="方形" Height="36" Width="64" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Microsoft Sans Serif" ToolBar.OverflowMode="Never" Click="ShapeButton_Click"/>
-                <Button x:Name="EllipseButton" Content="圓形" Height="36" Width="64" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Microsoft Sans Serif" ToolBar.OverflowMode="Never" Click="ShapeButton_Click"/>
-                <Button x:Name="EraseButton" Content="橡皮擦" Height="36" Width="64" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Microsoft Sans Serif" ToolBar.OverflowMode="Never" Click="ShapeButton_Click"/>
+            <ToolBar Background="#FFEEF5FD" HorizontalAlignment="Right" Width="434" Height="36" VerticalAlignment="Bottom" ToolBar.OverflowMode="Never" Margin="0,0,-154,5">
+                <RadioButton x:Name="LineButton" Content="Line" HorizontalAlignment="Right" VerticalAlignment="Top" Height="36" Width="64" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Microsoft Sans Serif" ToolBar.OverflowMode="Never" Click="ShapeButton_Click" GroupName="ShapeGroup" Margin="0,-2,0,-3" />
+                <RadioButton x:Name="RectangleButton" Content="Rectangle" Height="36" Width="64" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Microsoft Sans Serif" ToolBar.OverflowMode="Never" Click="ShapeButton_Click" GroupName="ShapeGroup" />
+                <RadioButton x:Name="EllipseButton" Content="Ellipse" Height="36" Width="64" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Microsoft Sans Serif" ToolBar.OverflowMode="Never" Click="ShapeButton_Click" GroupName="ShapeGroup" />
+                <RadioButton x:Name="PolygonButton" Content="Polygon" Width="64" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Microsoft Sans Serif" ToolBar.OverflowMode="Never" Click="ShapeButton_Click" Margin="0,-2,0,-3" GroupName="ShapeGroup" VerticalAlignment="Stretch" />
+
+                <RadioButton x:Name="FreeLine" Content="FreeLine" Width="64" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Microsoft Sans Serif" ToolBar.OverflowMode="Never" Click="ShapeButton_Click" Margin="0,-2,0,-3" GroupName="ShapeGroup" VerticalAlignment="Stretch" />
+                <RadioButton x:Name="EraseButton" Content="橡皮擦" Height="36" Width="64" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Microsoft Sans Serif" ToolBar.OverflowMode="Never" Click="ShapeButton_Click" GroupName="ShapeGroup" />
+
             </ToolBar>
-            <ToolBar Background="#FFEEF5FD" Height="41" VerticalAlignment="Center" HorizontalAlignment="Right" Width="88" ToolBar.OverflowMode="Never">
+            <ToolBar Background="#FFEEF5FD" ToolBar.OverflowMode="Never" Margin="484,-5,-645,5" Height="41" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="161">
                 <Button x:Name="ClearButton" Content="清除全部" Height="36" Width="64" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Left" VerticalAlignment="Top" ToolBar.OverflowMode="Never" Click="ClearButton_Click"/>
+                <Button x:Name="CanvasColorButton" Content="畫布顏色" Height="36" Width="64" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Left" VerticalAlignment="Top" ToolBar.OverflowMode="Never" Click="CanvasColorButton_Click"/>
             </ToolBar>
         </ToolBarTray>
-        <Canvas x:Name="myCanvas" Background="White" VerticalAlignment="Stretch" Height="600" MouseLeftButtonDown="myCanvas_MouseLeftButtonDown"/>
-        <StatusBar Height="100" VerticalAlignment="Top">
-            <Label x:Name="myLabel" Height="33" Width="600"></Label> >
+        <Canvas x:Name="myCanvas" Background="White" VerticalAlignment="Stretch" Height="600" MouseLeftButtonDown="myCanvas_MouseLeftButtonDown" MouseMove="myCanvas_MouseMove" MouseLeftButtonUp="myCanvas_MouseLeftButtonUp" >
+            <Canvas.ContextMenu>
+                <ContextMenu Name="CanvasRightMenu" >
+                    <MenuItem Header="小畫家" FontFamily="Microsoft JhengHei" FontWeight="Bold" Height="20">
+                        <MenuItem Header="關於小畫家                  " FontWeight="Normal" FontFamily="Microsoft JhengHei" Click="About_Click"/>
+                        <MenuItem Header="結束小畫家              ⌥ F4" FontWeight="Normal" FontFamily="Microsoft JhengHei" Click="bye"/>
+                    </MenuItem>
+                    <MenuItem Header="檔案">
+                        <MenuItem x:Name="CanvasClearButton" Header="清除畫布" Click="ClearButton_Click"/>
+                        <MenuItem x:Name="CanvasCanvasButton" Header="畫布顏色" Click="CanvasColorButton_Click"/>
+                        <MenuItem x:Name="CanvasSaveCanvas" Header="儲存畫布" Click="SaveCanvas_Click"/>
+                    </MenuItem>
+                    <MenuItem Header="色彩">
+                        <MenuItem Header="筆刷色彩" Click="StrokeButton_Click"/>
+                        <MenuItem Header="填滿色彩" Click="FillButton_Click"/>
+                    </MenuItem>
+                    <MenuItem Header="檢視"  Height="20">
+                        <CheckBox x:Name="CanvasmenuCheckBox" IsChecked="True" Content="顯示工具列" Click="menuCheckBox_Checked" />
+                    </MenuItem>
+                    <MenuItem Header="工具">
+                        <RadioButton Content="Line" GroupName="ShapeGroup" Click="ShapeButton_Click"/>
+                        <RadioButton Content="Rectangle" GroupName="ShapeGroup" Click="ShapeButton_Click"/>
+                        <RadioButton Content="Ellipse" GroupName="ShapeGroup" Click="ShapeButton_Click"/>
+                        <RadioButton Content="Polygon" GroupName="ShapeGroup"  Click="ShapeButton_Click"/>
+                        <RadioButton Content="FreeLine" GroupName="ShapeGroup" Click="ShapeButton_Click"/>
+                        <RadioButton Content="橡皮擦" GroupName="ShapeGroup" Click="EraseButton_Click"/>
+                    </MenuItem>
+                </ContextMenu>
+
+
+
+            </Canvas.ContextMenu>
+        </Canvas>
+        <StatusBar Height="50" Margin="0,0,-9,0">
+            <Label x:Name="myLabel" Height="33" Width="600"  VerticalAlignment="Top" ></Label>
         </StatusBar>
     </StackPanel>
 </Window>
