@@ -5,14 +5,13 @@ using System.Windows.Shapes;
 using System.Windows.Forms;
 using System;
 using System.Windows.Controls;
-using RadioButton = System.Windows.Controls.RadioButton;
 using System.Windows.Media.Imaging;
 using System.IO;
 
 namespace Wpf_Paint
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// MainWindow.xaml 的互動邏輯
     /// </summary>
     public partial class MainWindow : Window
     {
@@ -28,7 +27,7 @@ namespace Wpf_Paint
         string currentAction = "Draw";
         Point Ps, Pd; // 多邊形的起點與終點
         Point start, dest;
-        bool first = true; // 判斷多邊形是不是第一個邊
+        bool first = true; // 多邊形是不是第一個邊
         public MainWindow()
         {
             InitializeComponent();
@@ -39,7 +38,7 @@ namespace Wpf_Paint
             switch (currentAction)
             {
                 case "Draw":
-                    //顯示目前滑鼠游標，如果滑鼠左鍵一直按著就取終點座標
+                    //顯示目前滑鼠游標，如果滑鼠左鍵按住則取終點座標
                     if (e.LeftButton == MouseButtonState.Pressed)
                     {
                         myCanvas.Cursor = System.Windows.Input.Cursors.Pen;
@@ -69,7 +68,7 @@ namespace Wpf_Paint
 
         private void myCanvas_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-            //判斷每次滑鼠左鍵點擊時是要畫什麼
+            //戳左鍵就判斷要畫啥
             switch (currentShape)
             {
                 case "Line":
@@ -94,7 +93,7 @@ namespace Wpf_Paint
                 default:
                     return;
             }
-            //回復原本的滑鼠游標
+            //回復鼠標
             myCanvas.Cursor = System.Windows.Input.Cursors.Arrow;
 
         }
@@ -119,7 +118,6 @@ namespace Wpf_Paint
             //如果把線接到起點
             if (dest.X < Pd.X + 15 && dest.X > Pd.X - 15 && dest.Y < Pd.Y + 15 && dest.Y > dest.Y - 15)
             {
-                //System.Windows.MessageBox.Show("2");
                 myLabel.Content = "繪製多邊形完成";
                 myLine.X2 = Pd.X;
                 myLine.Y2 = Pd.Y;
@@ -137,7 +135,7 @@ namespace Wpf_Paint
 
         }
 
-        private void DrawFreeLine()//畫曲線
+        private void DrawFreeLine()//畫任意線條
         {
             DrawLine();
             start = dest;
@@ -161,7 +159,7 @@ namespace Wpf_Paint
             myCanvas.Children.Add(newEllipse);
         }
 
-        private void DrawRectangle()//畫矩形
+        private void DrawRectangle()//畫方形
         {
             AdjustPoint();
             double width = dest.X - start.X;
@@ -216,7 +214,7 @@ namespace Wpf_Paint
             StrokeButton.Background = currentStrokeBrush;
         }
 
-        private Color GetDialogColor()//呼叫選色彩
+        private Color GetDialogColor()//選顏色
         {
             ColorDialog dlg = new ColorDialog();
             dlg.ShowDialog();
@@ -233,12 +231,10 @@ namespace Wpf_Paint
         }
 
 
-        private void ShapeButton_Click(object sender, RoutedEventArgs e)//選擇要畫什麼形狀
+        private void ShapeButton_Click(object sender, RoutedEventArgs e)//畫什麼形狀
         {
             var btn = sender as System.Windows.Controls.RadioButton;
-            //RadioButton btn = sender as RadioButton;
             currentShape = btn.Content.ToString();
-            //myCanvas.Cursor = System.Windows.Input.Cursors.Arrow;
             currentAction = "Draw";
             myLabel.Content = $"畫{currentShape}";
         }
@@ -251,7 +247,7 @@ namespace Wpf_Paint
             FillButton.Background = currentFillBrush;
         }
 
-        private void EraseButton_Click(object sender, RoutedEventArgs e)//橡皮擦模式
+        private void EraseButton_Click(object sender, RoutedEventArgs e)//橡皮擦
         {
             currentAction = "Erase";
             if (myCanvas.Children.Count != 0)
@@ -262,25 +258,19 @@ namespace Wpf_Paint
 
         }
 
-        private void menuCheckBox_Checked(object sender, RoutedEventArgs e)//選單的確定是否顯示工作列
+        private void menuCheckBox_Checked(object sender, RoutedEventArgs e)//是否顯示工具列
         {
-            //System.Windows.MessageBox.Show("1");
             if (menuCheckBox.IsChecked == true)
             {
                 CanvasmenuCheckBox.IsChecked = true;
-                // System.Windows.MessageBox.Show("2");
                 myToolBarTray.Visibility = Visibility.Visible;
             }
             else
             {
                 CanvasmenuCheckBox.IsChecked = false;
-                //System.Windows.MessageBox.Show("3");
                 myToolBarTray.Visibility = Visibility.Collapsed;
             }
         }
-
-        //-----客製功能表結束-----
-
 
         private void SaveCanvas_Click(object sender, RoutedEventArgs e)
         {
@@ -334,24 +324,21 @@ namespace Wpf_Paint
 
         }
 
-        private void CanvasmenuCheckBox_Checked(object sender, RoutedEventArgs e)//工作列隱藏/顯示
+        private void CanvasmenuCheckBox_Checked(object sender, RoutedEventArgs e)//工作列要不要顯示
         {
-            //System.Windows.MessageBox.Show("1");
             if (CanvasmenuCheckBox.IsChecked == true)
             {
                 menuCheckBox.IsChecked = true;
-                //System.Windows.MessageBox.Show("2");
                 myToolBarTray.Visibility = Visibility.Visible;
             }
             else
             {
                 menuCheckBox.IsChecked = false;
-                //System.Windows.MessageBox.Show("3");
                 myToolBarTray.Visibility = Visibility.Collapsed;
             }
         }
 
-        private void myCanvas_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)//左下角座標、功能顯示
+        private void myCanvas_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)//座標放在狀態列
         {
             myCanvas.Cursor = System.Windows.Input.Cursors.Cross; // ~!~
             start = e.GetPosition(myCanvas);
