@@ -300,7 +300,7 @@ namespace Wpf_Paint
 
             saveFileDialog.ShowDialog();
             string path = saveFileDialog.FileName;
-            //未加防呆
+            
             using (var fs = File.Create(path))
             {
                 png.Save(fs);

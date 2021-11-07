@@ -30,7 +30,7 @@
                 <CheckBox x:Name="menuCheckBox" IsChecked="True" Content="顯示工具列" Click="menuCheckBox_Checked" />
             </MenuItem>
             <MenuItem Header="工具"  Height="20">
-                <RadioButton x:Name="MenuLineButton" Content="Line" GroupName="ShapeGroup" Click="ShapeButton_Click"/>
+                <RadioButton x:Name="MenuLineButton" Content="Line" GroupName="ShapeGroup" Click="ShapeButton_Click" IsChecked="True"/>
                 <RadioButton x:Name="MenuRectangleButton" Content="Rectangle" GroupName="ShapeGroup" Click="ShapeButton_Click"/>
                 <RadioButton x:Name="MenuEllipseButton" Content="Ellipse" GroupName="ShapeGroup" Click="ShapeButton_Click"/>
                 <RadioButton x:Name="MenuPolygonButton" Content="Polygon" GroupName="ShapeGroup" Click="ShapeButton_Click"/>
@@ -56,7 +56,7 @@
                 <RadioButton x:Name="EraseButton" Content="橡皮擦" Height="36" Width="64" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Microsoft Sans Serif" ToolBar.OverflowMode="Never" Click="ShapeButton_Click" GroupName="ShapeGroup" />
 
             </ToolBar>
-            <ToolBar Background="#FFEEF5FD" ToolBar.OverflowMode="Never" Margin="484,-5,-645,5" Height="41" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="161">
+            <ToolBar Background="#FFEEF5FD" ToolBar.OverflowMode="Never" Margin="155,0,-316,5" Height="36" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="161">
                 <Button x:Name="ClearButton" Content="清除全部" Height="36" Width="64" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Left" VerticalAlignment="Top" ToolBar.OverflowMode="Never" Click="ClearButton_Click"/>
                 <Button x:Name="CanvasColorButton" Content="畫布顏色" Height="36" Width="64" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Left" VerticalAlignment="Top" ToolBar.OverflowMode="Never" Click="CanvasColorButton_Click"/>
             </ToolBar>
