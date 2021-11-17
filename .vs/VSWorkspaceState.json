@@ -1,11 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\drink",
-    "\\drink\\WpfApp1",
-    "\\drink_UWP",
-    "\\Wpf_File"
+    "\\Trangle",
+    "\\Trangle\\Trangle"
   ],
-  "SelectedNode": "\\drink\\WpfApp1\\MainWindow.xaml.cs",
+  "SelectedNode": "\\Trangle\\Trangle\\MainWindow.xaml",
   "PreviewInSolutionExplorer": false
 }
