@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "gHiUZUkI35tTvLGjVDKvcyL9x3fL6Lt1wjnZkju6JQQMhVaDbX4gocB9ggpY5e0dlmBJlJjKpyKRLvU/IyQTyQ==",
+  "dgSpecHash": "amcaXt2r29s8sdgfoHrCGqDCRGZnYpzxK0YkCS22E7g62qG6c5tvjAFwvNlI5GXNydMKa67EDgYEXUhriOLuJw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\wmlab\\Desktop\\Wpf_File\\Wpf_File\\Wpf_File\\Wpf_File.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\WMSLAB\\Source\\Repos\\iambjlu\\CS_class\\Wpf_File\\Wpf_File\\Wpf_File.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\WMSLAB\\.nuget\\packages\\csvhelper\\27.2.0\\csvhelper.27.2.0.nupkg.sha512"
+  ],
   "logs": []
 }

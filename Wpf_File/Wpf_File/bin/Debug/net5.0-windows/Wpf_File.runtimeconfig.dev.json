@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\WMSLAB\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\WMSLAB\\.nuget\\packages"
+    ]
+  }
+}

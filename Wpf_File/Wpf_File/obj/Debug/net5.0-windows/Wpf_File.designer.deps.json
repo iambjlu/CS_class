@@ -5,7 +5,24 @@
   },
   "compilationOptions": {},
   "targets": {
-    ".NETCoreApp,Version=v5.0": {}
+    ".NETCoreApp,Version=v5.0": {
+      "CsvHelper/27.2.0": {
+        "runtime": {
+          "lib/net5.0/CsvHelper.dll": {
+            "assemblyVersion": "27.0.0.0",
+            "fileVersion": "27.2.0.0"
+          }
+        }
+      }
+    }
   },
-  "libraries": {}
+  "libraries": {
+    "CsvHelper/27.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TvOda5RWz/KK5MDGIuEE5WxckPCO+cEmws1ZsLas+mSFZJSpHp/v6xl2o72PXr8NcOndKhR7k0wuLYQQ/1R9fQ==",
+      "path": "csvhelper/27.2.0",
+      "hashPath": "csvhelper.27.2.0.nupkg.sha512"
+    }
+  }
 }

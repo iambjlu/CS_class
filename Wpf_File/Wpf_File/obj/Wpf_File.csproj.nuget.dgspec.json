@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\wmlab\\Desktop\\Wpf_File\\Wpf_File\\Wpf_File\\Wpf_File.csproj": {}
+    "C:\\Users\\WMSLAB\\Source\\Repos\\iambjlu\\CS_class\\Wpf_File\\Wpf_File\\Wpf_File.csproj": {}
   },
   "projects": {
-    "C:\\Users\\wmlab\\Desktop\\Wpf_File\\Wpf_File\\Wpf_File\\Wpf_File.csproj": {
+    "C:\\Users\\WMSLAB\\Source\\Repos\\iambjlu\\CS_class\\Wpf_File\\Wpf_File\\Wpf_File.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\wmlab\\Desktop\\Wpf_File\\Wpf_File\\Wpf_File\\Wpf_File.csproj",
+        "projectUniqueName": "C:\\Users\\WMSLAB\\Source\\Repos\\iambjlu\\CS_class\\Wpf_File\\Wpf_File\\Wpf_File.csproj",
         "projectName": "Wpf_File",
-        "projectPath": "C:\\Users\\wmlab\\Desktop\\Wpf_File\\Wpf_File\\Wpf_File\\Wpf_File.csproj",
-        "packagesPath": "C:\\Users\\wmlab\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\wmlab\\Desktop\\Wpf_File\\Wpf_File\\Wpf_File\\obj\\",
+        "projectPath": "C:\\Users\\WMSLAB\\Source\\Repos\\iambjlu\\CS_class\\Wpf_File\\Wpf_File\\Wpf_File.csproj",
+        "packagesPath": "C:\\Users\\WMSLAB\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\WMSLAB\\Source\\Repos\\iambjlu\\CS_class\\Wpf_File\\Wpf_File\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\wmlab\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\WMSLAB\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -43,6 +39,12 @@
       "frameworks": {
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
+          "dependencies": {
+            "CsvHelper": {
+              "target": "Package",
+              "version": "[27.2.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -61,7 +63,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

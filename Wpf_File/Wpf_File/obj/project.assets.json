@@ -1,31 +1,63 @@
 {
   "version": 3,
   "targets": {
-    "net5.0-windows7.0": {}
+    "net5.0-windows7.0": {
+      "CsvHelper/27.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/CsvHelper.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/CsvHelper.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "CsvHelper/27.2.0": {
+      "sha512": "TvOda5RWz/KK5MDGIuEE5WxckPCO+cEmws1ZsLas+mSFZJSpHp/v6xl2o72PXr8NcOndKhR7k0wuLYQQ/1R9fQ==",
+      "type": "package",
+      "path": "csvhelper/27.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "csvhelper.27.2.0.nupkg.sha512",
+        "csvhelper.nuspec",
+        "lib/net45/CsvHelper.dll",
+        "lib/net45/CsvHelper.xml",
+        "lib/net47/CsvHelper.dll",
+        "lib/net47/CsvHelper.xml",
+        "lib/net5.0/CsvHelper.dll",
+        "lib/net5.0/CsvHelper.xml",
+        "lib/net6.0/CsvHelper.dll",
+        "lib/net6.0/CsvHelper.xml",
+        "lib/netstandard2.0/CsvHelper.dll",
+        "lib/netstandard2.0/CsvHelper.xml",
+        "lib/netstandard2.1/CsvHelper.dll",
+        "lib/netstandard2.1/CsvHelper.xml"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0-windows7.0": []
+    "net5.0-windows7.0": [
+      "CsvHelper >= 27.2.0"
+    ]
   },
   "packageFolders": {
-    "C:\\Users\\wmlab\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\WMSLAB\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\wmlab\\Desktop\\Wpf_File\\Wpf_File\\Wpf_File\\Wpf_File.csproj",
+      "projectUniqueName": "C:\\Users\\WMSLAB\\Source\\Repos\\iambjlu\\CS_class\\Wpf_File\\Wpf_File\\Wpf_File.csproj",
       "projectName": "Wpf_File",
-      "projectPath": "C:\\Users\\wmlab\\Desktop\\Wpf_File\\Wpf_File\\Wpf_File\\Wpf_File.csproj",
-      "packagesPath": "C:\\Users\\wmlab\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\wmlab\\Desktop\\Wpf_File\\Wpf_File\\Wpf_File\\obj\\",
+      "projectPath": "C:\\Users\\WMSLAB\\Source\\Repos\\iambjlu\\CS_class\\Wpf_File\\Wpf_File\\Wpf_File.csproj",
+      "packagesPath": "C:\\Users\\WMSLAB\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\WMSLAB\\Source\\Repos\\iambjlu\\CS_class\\Wpf_File\\Wpf_File\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\wmlab\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\WMSLAB\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -50,6 +82,12 @@
     "frameworks": {
       "net5.0-windows7.0": {
         "targetAlias": "net5.0-windows",
+        "dependencies": {
+          "CsvHelper": {
+            "target": "Package",
+            "version": "[27.2.0, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
@@ -68,7 +106,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

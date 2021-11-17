@@ -1,0 +1,15 @@
+C:\Users\WMSLAB\source\repos\Trangle\Trangle\bin\Debug\Trangle.exe.config
+C:\Users\WMSLAB\source\repos\Trangle\Trangle\bin\Debug\Trangle.exe
+C:\Users\WMSLAB\source\repos\Trangle\Trangle\bin\Debug\Trangle.pdb
+C:\Users\WMSLAB\source\repos\Trangle\Trangle\obj\Debug\Trangle.csproj.AssemblyReference.cache
+C:\Users\WMSLAB\source\repos\Trangle\Trangle\obj\Debug\MainWindow.g.cs
+C:\Users\WMSLAB\source\repos\Trangle\Trangle\obj\Debug\App.g.cs
+C:\Users\WMSLAB\source\repos\Trangle\Trangle\obj\Debug\Trangle_MarkupCompile.cache
+C:\Users\WMSLAB\source\repos\Trangle\Trangle\obj\Debug\Trangle_MarkupCompile.lref
+C:\Users\WMSLAB\source\repos\Trangle\Trangle\obj\Debug\MainWindow.baml
+C:\Users\WMSLAB\source\repos\Trangle\Trangle\obj\Debug\Trangle.g.resources
+C:\Users\WMSLAB\source\repos\Trangle\Trangle\obj\Debug\Trangle.Properties.Resources.resources
+C:\Users\WMSLAB\source\repos\Trangle\Trangle\obj\Debug\Trangle.csproj.GenerateResource.cache
+C:\Users\WMSLAB\source\repos\Trangle\Trangle\obj\Debug\Trangle.csproj.CoreCompileInputs.cache
+C:\Users\WMSLAB\source\repos\Trangle\Trangle\obj\Debug\Trangle.exe
+C:\Users\WMSLAB\source\repos\Trangle\Trangle\obj\Debug\Trangle.pdb
