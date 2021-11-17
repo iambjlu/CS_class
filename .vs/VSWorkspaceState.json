@@ -2,8 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\drink",
-    "\\drink\\WpfApp1"
+    "\\drink\\WpfApp1",
+    "\\Triangle",
+    "\\Triangle\\Triangle",
+    "\\Wpf_Paint"
   ],
-  "SelectedNode": "\\drink\\WpfApp1\\MainWindow.xaml.cs",
+  "SelectedNode": "\\Triangle\\Triangle\\MainWindow.xaml",
   "PreviewInSolutionExplorer": false
 }
