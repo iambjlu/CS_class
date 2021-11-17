@@ -11,7 +11,7 @@
 <br><br>
 <h2>作業範本</h2>
 <a href="https://github.com/iambjlu/CS_class/raw/master/Readme_src/1101020.docx" target="_blank" download>作業範本點此下載</a><br>
-建議在輸出為PDF後，將其與 Visual Studio 印出的程式碼 PDF 使用 <a href="https://www.adobe.com/tw/acrobat/online/merge-pdf.html" target="_blank">Adobe 工具</a> 合併
+建議在輸出為PDF後，將其與 Visual Studio 印出的程式碼 PDF 使用 <a href="https://www.adobe.com/tw/acrobat/online/merge-pdf.html" target="_blank">Adobe 線上工具</a> 合併
 <br><br><br>
 <h2>Visual Studio VCS 使用方式筆記</h2>
 使用版本：Visual Studio 2019 Professional<br><br>
