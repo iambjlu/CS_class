@@ -7,7 +7,7 @@
 <a href="https://github.com/iambjlu/CS_Class/tree/master/drink_UWP"> [UWP] 飲料點餐系統 (自行移植) </a><br>
 <a href="https://github.com/iambjlu/CS_Class/tree/master/Wpf_File"> [WPF] 飲料檔案讀取系統 </a><br>
 <a href="https://github.com/iambjlu/CS_Class/tree/master/Wpf_Paint"> [WPF] 小畫家(客製版) </a><br>
-<a href="https://github.com/iambjlu/CS_Class/tree/master/Triangle"> [WPF] 三角形判斷程式 </a><br>
+<a href="https://github.com/iambjlu/CS_class/tree/master/Trangle"> [WPF] 三角形判斷程式 </a><br>
 <br><br>
 <h2>作業範本</h2>
 <a href="https://github.com/iambjlu/CS_class/raw/master/Readme_src/1101020.docx" target="_blank" download>作業範本點此下載</a><br>
