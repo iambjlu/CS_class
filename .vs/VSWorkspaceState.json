@@ -3,10 +3,11 @@
     "",
     "\\drink",
     "\\drink\\WpfApp1",
+    "\\NoteBook",
     "\\Triangle",
     "\\Triangle\\Triangle",
     "\\Wpf_Paint"
   ],
-  "SelectedNode": "\\drink\\WpfApp1\\MainWindow.xaml.cs",
+  "SelectedNode": "\\NoteBook",
   "PreviewInSolutionExplorer": false
 }
