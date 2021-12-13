@@ -3,11 +3,12 @@
     "",
     "\\drink",
     "\\drink\\WpfApp1",
-    "\\NoteBook",
     "\\Triangle",
     "\\Triangle\\Triangle",
-    "\\Wpf_Paint"
+    "\\Wpf_File",
+    "\\Wpf_NoteBook",
+    "\\Wpf_Paint",
+    "\\Wpf_Paint\\Wpf_Paint"
   ],
-  "SelectedNode": "\\NoteBook",
   "PreviewInSolutionExplorer": false
 }

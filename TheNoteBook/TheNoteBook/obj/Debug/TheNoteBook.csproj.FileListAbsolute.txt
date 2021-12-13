@@ -1,0 +1,6 @@
+C:\Users\WMSLAB\source\repos\iambjlu\CS_class\TheNoteBook\TheNoteBook\obj\Debug\TheNoteBook.csproj.AssemblyReference.cache
+C:\Users\WMSLAB\source\repos\iambjlu\CS_class\TheNoteBook\TheNoteBook\obj\Debug\DocumentViewerWindow.g.cs
+C:\Users\WMSLAB\source\repos\iambjlu\CS_class\TheNoteBook\TheNoteBook\obj\Debug\MainWindow.g.cs
+C:\Users\WMSLAB\source\repos\iambjlu\CS_class\TheNoteBook\TheNoteBook\obj\Debug\App.g.cs
+C:\Users\WMSLAB\source\repos\iambjlu\CS_class\TheNoteBook\TheNoteBook\obj\Debug\TheNoteBook_MarkupCompile.cache
+C:\Users\WMSLAB\source\repos\iambjlu\CS_class\TheNoteBook\TheNoteBook\obj\Debug\TheNoteBook_MarkupCompile.lref

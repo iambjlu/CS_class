@@ -58,7 +58,7 @@ namespace NoteBook
             Microsoft.Win32.SaveFileDialog saveFileDialog = new Microsoft.Win32.SaveFileDialog();
             saveFileDialog.Title = "儲存文字檔案";
             saveFileDialog.DefaultExt = "*.rtf";
-            saveFileDialog.Filter = "文字檔案(*.rtf)|*.rtf|全部檔案(*.*)|*.*";
+            saveFileDialog.Filter = "帶格式文件(*.rtf)|*.rtf|全部檔案(*.*)|*.*";
 
             if (saveFileDialog.ShowDialog() == true)
             {
