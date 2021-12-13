@@ -37,6 +37,9 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -100,6 +103,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="New.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Close.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Bold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Italic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="UnderLine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Color.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

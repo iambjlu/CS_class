@@ -4,3 +4,14 @@ C:\Users\WMSLAB\source\repos\iambjlu\CS_class\TheNoteBook\TheNoteBook\obj\Debug\
 C:\Users\WMSLAB\source\repos\iambjlu\CS_class\TheNoteBook\TheNoteBook\obj\Debug\App.g.cs
 C:\Users\WMSLAB\source\repos\iambjlu\CS_class\TheNoteBook\TheNoteBook\obj\Debug\TheNoteBook_MarkupCompile.cache
 C:\Users\WMSLAB\source\repos\iambjlu\CS_class\TheNoteBook\TheNoteBook\obj\Debug\TheNoteBook_MarkupCompile.lref
+C:\Users\WMSLAB\source\repos\iambjlu\CS_class\TheNoteBook\TheNoteBook\bin\Debug\TheNoteBook.exe.config
+C:\Users\WMSLAB\source\repos\iambjlu\CS_class\TheNoteBook\TheNoteBook\bin\Debug\TheNoteBook.exe
+C:\Users\WMSLAB\source\repos\iambjlu\CS_class\TheNoteBook\TheNoteBook\bin\Debug\TheNoteBook.pdb
+C:\Users\WMSLAB\source\repos\iambjlu\CS_class\TheNoteBook\TheNoteBook\obj\Debug\DocumentViewerWindow.baml
+C:\Users\WMSLAB\source\repos\iambjlu\CS_class\TheNoteBook\TheNoteBook\obj\Debug\MainWindow.baml
+C:\Users\WMSLAB\source\repos\iambjlu\CS_class\TheNoteBook\TheNoteBook\obj\Debug\TheNoteBook.g.resources
+C:\Users\WMSLAB\source\repos\iambjlu\CS_class\TheNoteBook\TheNoteBook\obj\Debug\TheNoteBook.Properties.Resources.resources
+C:\Users\WMSLAB\source\repos\iambjlu\CS_class\TheNoteBook\TheNoteBook\obj\Debug\TheNoteBook.csproj.GenerateResource.cache
+C:\Users\WMSLAB\source\repos\iambjlu\CS_class\TheNoteBook\TheNoteBook\obj\Debug\TheNoteBook.csproj.CoreCompileInputs.cache
+C:\Users\WMSLAB\source\repos\iambjlu\CS_class\TheNoteBook\TheNoteBook\obj\Debug\TheNoteBook.exe
+C:\Users\WMSLAB\source\repos\iambjlu\CS_class\TheNoteBook\TheNoteBook\obj\Debug\TheNoteBook.pdb
