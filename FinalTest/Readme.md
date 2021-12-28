@@ -2,7 +2,7 @@
 語言：C#<br>
 註:因為沒看老師範例，所以在滑桿的地方被扣分(不能實時計算)
 <br><br>
-<a href="https://github.com/iambjlu/CS_class/raw/master/FinalTest/Readme_src/Teacher_Demo">點擊此處查看老師範例</a><br>
+<a href="https://github.com/iambjlu/CS_class/raw/master/FinalTest/Readme_src/Teacher_Demo">點擊此處查看老師範例</a><br><br>
 
 題目:<br>
 <img src="https://github.com/iambjlu/CS_class/raw/master/FinalTest/Readme_src/img0.png"></img>
