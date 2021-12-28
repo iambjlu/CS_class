@@ -1,0 +1,22 @@
+﻿<Window x:Class="FinalTest.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FinalTest"
+        mc:Ignorable="d"
+        Title="四則運算視窗" Height="450" Width="800">
+    <Grid>
+        <StackPanel Margin="163,10,586,341.4">
+            <RadioButton x:Name="plus" Content="+" GroupName="ShapeGroup" Click="MathButton_Click"/>
+            <RadioButton x:Name="minus" Content="-" GroupName="ShapeGroup" Click="MathButton_Click"/>
+            <RadioButton x:Name="times" Content="×" GroupName="ShapeGroup" Click="MathButton_Click"/>
+            <RadioButton x:Name="divide" Content="÷" GroupName="ShapeGroup" Click="MathButton_Click"/>
+        </StackPanel>
+        <TextBox x:Name="a" HorizontalAlignment="Left" Height="31" Margin="10,24,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="130" FontSize="20"/>
+        <TextBox x:Name="b" HorizontalAlignment="Left" Height="28" Margin="226,24,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="130" FontSize="20"/>
+        <Label Content="=" HorizontalAlignment="Left" Margin="399,24,0,0" VerticalAlignment="Top" Width="36" Height="44" FontSize="20"/>
+        <Label x:Name="Ans" Content="?" HorizontalAlignment="Left" Margin="484,24,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label Content="按一下運算符號即可計算" HorizontalAlignment="Left" Margin="0,75,0,0" VerticalAlignment="Top" Width="503"/>
+    </Grid>
+</Window>

@@ -3,12 +3,14 @@
     "",
     "\\drink",
     "\\drink\\WpfApp1",
+    "\\TheNoteBook",
+    "\\TheNoteBook\\TheNoteBook",
     "\\Triangle",
     "\\Triangle\\Triangle",
     "\\Wpf_File",
     "\\Wpf_Paint",
     "\\Wpf_Paint\\Wpf_Paint"
   ],
-  "SelectedNode": "\\Readme.md",
+  "SelectedNode": "\\Wpf_Paint\\Wpf_Paint\\MainWindow.xaml",
   "PreviewInSolutionExplorer": false
 }

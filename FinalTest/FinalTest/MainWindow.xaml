@@ -1,0 +1,15 @@
+﻿<Window x:Class="FinalTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FinalTest"
+        mc:Ignorable="d"
+        Title="5a8g0005 盧柏均" Height="450" Width="800">
+    <Grid>
+        <Label Content="5a8g0005 盧柏均" Margin="338,10,339,370"/>
+        <Button x:Name="bt1" Content="計算成績視窗" Margin="116,183,421,139" Click="Button_Click"/>
+        <Button Content="四則運算視窗" Margin="421,183,116,139" Click="Button2_Click"/>
+
+    </Grid>
+</Window>
