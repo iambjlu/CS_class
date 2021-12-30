@@ -3,7 +3,7 @@
 註:因為一些因素，有些功能未完成<br>
 只是自發性練習別人題目。
 <br><br>
-<a href="https://github.com/iambjlu/CS_class/raw/master/FinalTest_4a9g/Readme_src/Wpf_exam.exe">點擊此處查看老師範例</a><br><br>
+<a href="https://github.com/iambjlu/CS_class/raw/master/FinalTest_4a9g/Readme_src/WpfExam.exe">點擊此處查看老師範例</a><br><br>
 
 題目:<br>
 <img src="https://github.com/iambjlu/CS_class/raw/master/FinalTest_4a9g/Readme_src/img0.jpg"></img>
