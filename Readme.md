@@ -10,6 +10,7 @@
 <a href="https://github.com/iambjlu/CS_class/tree/master/Triangle"> [WPF] 三角形判斷程式 </a><br>
 <a href="https://github.com/iambjlu/CS_class/tree/master/TheNoteBook"> [WPF] 筆記本 </a><br>
 <a href="https://github.com/iambjlu/CS_class/tree/master/FinalTest"> [WPF] 期末上機考 </a><br>
+<a href="https://github.com/iambjlu/CS_class/tree/master/FinalTest_4a9g"> [WPF] 期末上機考(大二) </a><br>
 <br><br>
 <h2>作業範本</h2>
 <a href="https://github.com/iambjlu/CS_class/raw/master/Readme_src/1101020.docx" target="_blank" download>作業範本點此下載</a><br>
