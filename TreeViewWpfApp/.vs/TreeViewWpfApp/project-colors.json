@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "93fe29ca-09e2-4b5c-a88e-f228c9da4fb0": {
+      "ProjectGuid": "93fe29ca-09e2-4b5c-a88e-f228c9da4fb0",
+      "DisplayName": "TreeViewWpfApp",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
