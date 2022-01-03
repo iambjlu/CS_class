@@ -26,7 +26,7 @@ namespace TreeViewWpfApp
         {
             InitializeComponent();
 
-
+            MessageBox.Show($"歡迎使用選課系統。\n請先選擇檔案。");
 
             Teacher teacher1 = new Teacher() { TeacherName = "陳定宏" };
             teacher1.Courses.Add(new Course(teacher1) { CourseName = "視窗程式設計", Type = "選修", Point = 3, OpeningClass = "五專資工三甲" });

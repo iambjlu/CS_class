@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TreeViewWpfApp"
         mc:Ignorable="d"
-        Title="學生選課系統" MinWidth="1100" MinHeight="630" d:DesignHeight="630">
+        Title="學生選課系統" MinWidth="1100" MinHeight="720" d:DesignHeight="630">
     <Grid Margin="0,0,0,10">
         <Grid.RowDefinitions>
             <RowDefinition Height="50"/>
@@ -75,8 +75,8 @@
                 </ListBox>
             </TabItem>
         </TabControl>
-        <Label Content="學生" HorizontalAlignment="Left" Margin="19,0,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.314,0.632"/>
-        <ComboBox x:Name="cmbStudent" HorizontalAlignment="Left" Margin="74,12,0,0" VerticalAlignment="Top" Width="485" SelectionChanged="cmbStudent_SelectionChanged">
+        <Label Content="學生" HorizontalAlignment="Left" Margin="17,0,0,0" VerticalAlignment="Center" RenderTransformOrigin="0.314,0.632"/>
+        <ComboBox x:Name="cmbStudent" HorizontalAlignment="Left" Margin="74,0,0,0" VerticalAlignment="Center" Width="176" SelectionChanged="cmbStudent_SelectionChanged" Height="28">
         </ComboBox>
         <StatusBar Grid.Row="2" Grid.ColumnSpan="3">
             <Label x:Name="statusLabel" Content="" Width="742" Height="40" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="14" Margin="100,0,0,0"/>
