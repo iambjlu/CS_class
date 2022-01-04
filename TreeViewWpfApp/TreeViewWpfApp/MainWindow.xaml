@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TreeViewWpfApp"
         mc:Ignorable="d"
-        Title="學生選課系統" MinWidth="1100" MinHeight="720" d:DesignHeight="630">
+        Title="學生選課系統" MinWidth="1280" MinHeight="720" d:DesignHeight="630">
     <Grid Margin="0,0,0,10">
         <Grid.RowDefinitions>
             <RowDefinition Height="50"/>
@@ -83,7 +83,7 @@
         </StatusBar>
         <Button x:Name="registerButton" Grid.Column="1" Content="-&gt;" HorizontalAlignment="Center" Margin="0,70,0,0" Grid.Row="1" VerticalAlignment="Top" Height="45" Width="80" FontSize="20" Click="registerButton_Click"/>
         <Button x:Name="withdrawButton" Grid.Column="1" Content="&lt;-" HorizontalAlignment="Center" Margin="0,140,0,0" Grid.Row="1" VerticalAlignment="Top" Height="45" Width="80" FontSize="20" Click="withdrawButton_Click"/>
-        <Button x:Name="saveButton" Grid.Column="1" Content="Save" HorizontalAlignment="Center" Margin="0,210,0,0" Grid.Row="1" VerticalAlignment="Top" Height="45" Width="80" FontSize="20" Click="saveButton_Click"/>
+        <Button x:Name="saveButton" Grid.Column="1" Content="儲存" HorizontalAlignment="Center" Margin="0,210,0,0" Grid.Row="1" VerticalAlignment="Top" Height="45" Width="80" FontSize="20" Click="saveButton_Click"/>
         <ListView x:Name="lvRecord" Grid.Column="2" Grid.Row="1" ItemsSource="{Binding records}" Background="#FFF6E6E6" SelectionChanged="lvRecord_SelectionChanged">
             <ListView.View>
                 <GridView>

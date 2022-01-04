@@ -1,17 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\FinalTest_4a9g",
-    "\\FinalTest_4a9g\\Final_Exam",
     "\\TheNoteBook",
     "\\TheNoteBook\\TheNoteBook",
     "\\TreeViewWpfApp",
+    "\\TreeViewWpfApp\\TreeViewWpfApp",
     "\\Triangle",
     "\\Triangle\\Triangle",
     "\\Wpf_File",
     "\\Wpf_Paint",
     "\\Wpf_Paint\\Wpf_Paint"
   ],
-  "SelectedNode": "\\TreeViewWpfApp\\WpfApp1.sln",
+  "SelectedNode": "\\TreeViewWpfApp\\TreeViewWpfApp\\WpfApp1.sln",
   "PreviewInSolutionExplorer": false
 }
